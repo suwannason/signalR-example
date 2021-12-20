@@ -23,6 +23,7 @@ export default class App extends Component {
             console.log('DATA: ', data);
             this.setState({ number: this.state.number + 1 })
       })
+      
     connection.on("chartStatus2", data => {
       console.log(data);
   });
